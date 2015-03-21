@@ -1,0 +1,50 @@
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="main.css">
+  <title>KAMARI AYKES - Full-Stack Dev</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="http://goo.gl/DC2mYL">Resume</a></li>
+      <li><a href="mailto:AykesKC@gmail.com">Contact Me</a></li>
+      <!-- <li><a href="/blog">Blog</a></li> -->
+    </ul>
+  </nav>
+  <h1>Kamari Aykes</h1>
+  <div class="who">
+    <p>Who Am I? <span class="logos"><a href='http://linkedin.com/in/kamariaykes'><img class='linkedin' src='img/linkedin.png'></img></a></span><br />
+    <small>Kamari Aykes is a NJ native and currently serves as Secretary of the National Urban League Young Professionals. Moving forward, she hopes to combine her skills and interests in policy, community engagement, and STEM to be an influential advocate for those in need.  </small></p>
+  </div>
+
+  <div class="what show-description">
+    <p>What Have I learned? <span class="logos"><a href='http://github.com/brainyandbrown'><img class='github' src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'></img></a></span><br />
+    <small>Ruby/Rails | RSpec | Javascript/jQuery | AJAX | HTML5/CSS3 | Python | Version Control (Git) | PostgreSQL | ORM (Active Record) | Jasmine | Capybara | Sinatra | Redis | Firebase | Authorizations (OAuth, etc.) | OOP | TDD/BDD | RESTful APIs | Agile & Waterfall development</small></p>
+  </div>
+
+  <div class="how">
+    <p>What Is My Action Plan? <span class="logos"><a href='http://twitter.com/brainyandbrown'><img class='twitter' src='http://www.thedevshack.com/wp-content/uploads/2010/09/Logo-Twitter.jpg'></img></a></span><br />
+    <small>I am currently continuing where my education at <a href='http://generalassemb.ly'>General Assembly</a> ended. This includes teaching myself Objective-C, Swift, and Android languages to deploy mobile applications. I am also contributing to open-source projects on Github and Stack Overflow. </small></p>
+  </div>
+
+  <footer>Created by Kamari Aykes MMXV</footer>
+  <script>
+    $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+    });
+
+    $(document).ready(function() {
+      $("a").click(function() {
+        link_host = this.href.split("/")[2];
+        document_host = document.location.href.split("/")[2];
+
+        if (link_host != document_host) {
+          window.open(this.href);
+          return false;
+        }
+      });
+    });
+  </script>
+</body>
