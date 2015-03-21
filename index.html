@@ -24,103 +24,44 @@
 <!DOCTYPE html>
 
 <head>
-<script src="/assets/jquery.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
-<style>
-
-body {
-  font-family: helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: 600px;
-  background: #232323;
-}
-div {
-  height: 200px;
-  background-size: cover;
-  position: relative;
-  margin: 40px 0 0 0;
-  border-radius: 12px;
-}
-h1 {
-  font-family: 'Londrina Shadow', cursive;
-  text-align: center;
-  font-size: 75px;
-  color: #aaaaaa;
-  margin: 60px 0 0 0;
-}
-h2 {
-  text-align: center;
-  color: #bbbbbb;
-  margin: 0px 0 70px 0;
-}
-p {
-  color: rgba(255,255,255,1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  padding: 10px;
-  line-height: 28px;
-  text-align: justify;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-    height: 30px;
-  transition: height .5s;
-  -webkit-transition: height .5s;
-  -moz-transition: height .5s;
-}
-small {
-  opacity: 0;
-}
-
-.show-description p {
-  height: 150px;
-}
-.show-description small {
-  opacity: 1;
-}
-.first{
-  background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
-}
-.second{
-  background-image: url("http://dash.ga.co/assets/secondcourse.jpg");
-}
-.dessert{
-  background-image: url("http://dash.ga.co/assets/dessertcourse.jpg");
-}
-.price {
-  float: right;
-}
-@media (max-width: 500px) {
-
-
-}
-</style>
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-<h1>esha's restaurant</h1>
-<h2>a New York City eatery</h2>
+<h1>Kamari Aykes</h1>
+<!-- <h2>a New York City eatery</h2> -->
 <div class="first">
-  <p>welsh onion soko <span class="price">$14</span><br />
-  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+  <p>Who Am I? <span class="logos"><a href='http://linkedin.com/in/kamariaykes'><img class='linkedin' src='img/linkedin.png'></img></a></span><br />
+  <small>Kamari Aykes is a NJ native and currently serves as Secretary of the National Urban League Young Professionals. Moving forward, she hopes to combine her skills and interests in policy, community engagement, and STEM to be an influential advocate for those in need.  </small></p>
 </div>
 
 <div class="second show-description">
-  <p>pastrami boudin tongue <span class="price">$22</span><br />
-  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+  <p>What Have I learned? <span class="logos"><a href='http://github.com/brainyandbrown'><img class='github' src='img/octocat.jpg'></img></a></span><br />
+  <small>Ruby/Rails | RSpec | Javascript/jQuery | AJAX | HTML5/CSS3 | Python | Version Control (Git) | PostgreSQL | ORM (Active Record) | Jasmine | Capybara | Sinatra | Redis | Firebase | Authorizations (OAuth, etc.) | OOP | TDD/BDD | RESTful APIs | Agile & Waterfall development</small></p>
 </div>
 
 <div class="dessert">
-  <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
-  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+  <p>What Is My Action Plan? <span class="logos"><a href='http://twitter.com/brainyandbrown'><img class='twitter' src='http://www.thedevshack.com/wp-content/uploads/2010/09/Logo-Twitter.jpg'></img></a></span><br />
+  <small>I am currently continuing where my education at <a href='http://generalassemb.ly'>General Assembly</a> ended. This includes teaching myself Objective-C, Swift, and Android languages to deploy mobile applications. I am also contributing to open-source projects on Github and Stack Overflow. </small></p>
 </div>
 
 <script>
   $('div').on('click', function() {
     $(this).toggleClass('show-description');
+  });
+
+  $(document).ready(function() {
+    $("a").click(function() {
+      link_host = this.href.split("/")[2];
+      document_host = document.location.href.split("/")[2];
+
+      if (link_host != document_host) {
+        window.open(this.href);
+        return false;
+      }
+    });
   });
 </script>
 </body>
