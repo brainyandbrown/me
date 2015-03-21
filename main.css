@@ -1,18 +1,32 @@
-/*.important {
-      font-size: 30px;
-      margin: 20px 0px 20px 0px;
-      border: 20px rgba(255,255,255,1);
-      border-radius: 15px;
-      height: 200px;
-}*/
-
-
 body {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
   max-width: 600px;
-  background: #232323;
+  background: black;
 }
+
+nav ul, footer ul {
+    font-family:'Londrina Shadow', cursive;
+    padding: 0px;
+    list-style: none;
+    color: #aaaaaa;
+    font-size: 20px;
+
+}
+
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 div {
   height: 200px;
   background-size: cover;
@@ -30,7 +44,7 @@ h1 {
 h2 {
   text-align: center;
   color: #bbbbbb;
-  margin: 0px 0 70px 0;
+  margin: 0 0 70px 0;
 }
 p {
   color: rgba(255,255,255,1);
@@ -59,17 +73,17 @@ small {
 .show-description small {
   opacity: 1;
 }
-.first{
+.who{
   background-image: url("img/kamari_aykes.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.second{
+.what{
   background-image: url("img/ka_podium.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
-.dessert{
+.how{
   background-image: url("https://pbs.twimg.com/media/B_LAoUNXAAAVSvg.png:large");
 }
 .logos {
@@ -90,6 +104,13 @@ small {
   height: 20px;
   width: auto;
 }
+
+footer {
+    /*border-top: 1px solid #d5d5d5;*/
+    font-size: .8em;
+    text-align: left;
+}
+
 @media (max-width: 500px) {
 
 
