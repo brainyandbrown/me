@@ -3,6 +3,8 @@ body {
   margin: 0 auto;
   max-width: 600px;
   background-image: url('img/3.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 nav ul, footer ul {
