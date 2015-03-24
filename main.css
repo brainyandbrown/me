@@ -70,7 +70,7 @@ small {
   opacity: 0;
 }
 
-ul li.nth-child(2) {
+.indent {
   margin-left: 10px;
 }
 
