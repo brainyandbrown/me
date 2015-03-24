@@ -131,6 +131,10 @@ footer {
     color: #151314;
 }
 
+.white {
+  color: #aaaaaa;
+}
+
 @media (max-width: 500px) {
 
 
