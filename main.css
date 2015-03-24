@@ -62,10 +62,16 @@ p {
     height: 30px;
   transition: height .5s;
   -webkit-transition: height .5s;
+  -o-transition: height .5s;
   -moz-transition: height .5s;
 }
+
 small {
   opacity: 0;
+}
+
+ul li.nth-child(2) {
+  margin-left: 10px;
 }
 
 .show-description p {
