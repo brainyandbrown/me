@@ -14,11 +14,13 @@ nav ul, footer ul {
     list-style: none;
     color: #151314;
     font-size: 20px;
-
+    display: inline-block;
+    position: center;
 }
 
 nav ul li, footer ul li {
-    display: inline;
+    display: inline-block;
+    position: center;
     margin-right: 20px;
 }
 
@@ -126,7 +128,7 @@ small {
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
+    /*border-top: 1px solid #d5d5d5;*/
     font-size: .8em;
     text-align: left;
     color: #151314;
