@@ -1,6 +1,18 @@
+    $(document).ready(function() {
+      $("a").click(function() {
+        link_host = this.href.split("/")[2];
+        document_host = document.location.href.split("/")[2];
+
+        if (link_host != document_host) {
+          window.open(this.href);
+          return false;
+        }
+      });
+    });
+
 (function($) {
 
-	"use strict";	
+	"use strict";
 
   	$(".main-menu a").click(function(){
 		var id =  $(this).attr('class');
@@ -8,7 +20,7 @@
 		$('a.active').removeClass('active');
     	$(this).addClass('active');
 		$("#menu-container .content").slideUp('slow');
-		$("#menu-container #menu-"+id[1]).slideDown('slow');		
+		$("#menu-container #menu-"+id[1]).slideDown('slow');
 		$("#menu-container .homepage").slideUp('slow');
 		return false;
 	});
