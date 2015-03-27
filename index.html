@@ -1,63 +1,333 @@
-<head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8">
-  WebFontConfig = {
-    google: { families: [ 'Cinzel+Decorative:400,700:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
-  <!-- <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'> -->
-  <link rel="stylesheet" href="main.css">
-  <title>KAMARI AYKES - Full-Stack Dev</title>
-</head>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>KAMARI AYKES - Full-Stack Dev</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+        Rectangle Template
+        http://www.templatemo.com/preview/templatemo_439_rectangle
+    	-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-<body>
-  <h1>Kamari Aykes</h1>
-  <nav>
-    <ul>
-      <li><a href="http://goo.gl/DC2mYL">Resume</a></li>
-      <li><a href="mailto:AykesKC@gmail.com">Contact Me</a></li>
-      <li><a href="/me/projects">Projects</a></li>
-      <!-- <li><a href="/blog">Blog</a></li> -->
-    </ul>
-  </nav>
-  <div class="who">
-    <p>Who Am I? <span class="logos"><a href='http://linkedin.com/in/kamariaykes'><img class='linkedin' src='img/linkedin.png'></img></a></span><br />
-    <small>Kamari Aykes is a NJ native and recent <a href='http://generalassemb.ly'>General Assembly</a> Web Developer Immersive alum. It is her desire to join a professional team that enjoys writing efficient code. In her spare time, she volunteer with different non-profit organizations & searches for intramural flag football teams. </small></p>
-  </div>
+        <div class="site-bg"></div>
+        <div class="site-bg-overlay"></div>
 
-  <div class="what show-description">
-    <p>What Have I learned? <span class="logos"><a href='http://github.com/brainyandbrown'><img class='github' src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'></img></a></span><br />
-    <small>Ruby/Rails | RSpec | Javascript/jQuery | AJAX | HTML5/CSS3 | Python | Version Control (Git) | PostgreSQL | ORM (Active Record) | Jasmine | Capybara | Sinatra | Redis | Firebase | Authorizations (OAuth, etc.) | OOP | TDD/BDD | RESTful APIs | Agile & Waterfall development</small></p>
-  </div>
+        <!-- TOP HEADER -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="phone-info"><!-- Call us: <a href="#">010 020 0340 --></a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-icons">
+                            <ul>
+                                <!-- <li><a href="#" class="fa fa-facebook"></a></li> -->
+                                <li><a href="http://github.com/brainyandbrown" class="fa fa-github"></a></li>
+                                <li><a href="http://linkedin.com/in/kamariaykes" class="fa fa-linkedin"></a></li>
+                                <li><a href="http://twitter.com/brainyandbrown" class="fa fa-twitter"></a></li>
+                                <!-- <li><a href="#" class="fa fa-rss"></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .top-header -->
 
-  <div class="how">
-    <p>What Is My Action Plan? <span class="logos"><a href='http://twitter.com/brainyandbrown'><img class='twitter' src='http://www.thedevshack.com/wp-content/uploads/2010/09/Logo-Twitter.jpg'></img></a></span><br />
-    <small>I am currently continuing where my education at <a href='http://generalassemb.ly'>General Assembly</a> ended. This includes teaching myself Objective-C, Swift, and Android languages to deploy mobile applications. I am also contributing to open-source projects on Github and Stack Overflow. </small></p>
-  </div>
 
-  <footer>Created by Kamari Aykes MMXV | All code screenshots are pulled from <span class='white'>my own projects.</span></footer>
-  <script>
-    $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-    });
+        <div class="visible-xs visible-sm responsive-menu">
+            <a href="#" class="toggle-menu">
+                <i class="fa fa-bars"></i> Show Menu
+            </a>
+            <div class="show-menu">
+                <ul class="main-menu">
+                    <li>
+                        <a class="show-1 active homebutton" href="#"><i class="fa fa-home"></i>Casa</a>
+                    </li>
+                    <li>
+                        <a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>About Us</a>
+                    </li>
+                    <li>
+                        <a class="show-3 projectbutton" href="#"><i class="fa fa-camera"></i>Gallery</a>
+                    </li>
+                    <li>
+                        <a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    $(document).ready(function() {
-      $("a").click(function() {
-        link_host = this.href.split("/")[2];
-        document_host = document.location.href.split("/")[2];
+        <div class="container" id="page-content">
+            <div class="row">
 
-        if (link_host != document_host) {
-          window.open(this.href);
-          return false;
-        }
-      });
-    });
-  </script>
-</body>
+
+
+                <div class="col-md-9 col-sm-12 content-holder">
+                    <!-- CONTENT -->
+                    <div id="menu-container">
+
+                        <div class="logo-holder logo-top-margin">
+                            <a href="#" class="site-brand"><img src="https://yellohdesign.files.wordpress.com/2014/07/ka1.jpg?w=100" alt=""></a>
+                        </div>
+
+
+                        <div id="menu-1" class="homepage home-section text-center">
+                            <div class="welcome-text">
+                                <h2><strong>KAMARI AYKES</strong></h2>
+                                <p>is a recent <span class="red"><a href='http://generalassemb.ly'>General Assembly</a></span> Web Developer Immersive alum. It is her desire to join a professional team that enjoys writing efficient code. In her spare time, she volunteer with different non-profit organizations & searches for intramural flag football teams. </p>
+                                <!-- <form action="#" method="get" class="subscribe-form">
+                                    <div class="row">
+                                        <fieldset class="col-md-offset-2 col-md-6">
+                                            <input name="subscribe-email" type="email" class="email" id="subscribe-email" placeholder="Write your email here..">
+                                        </fieldset> -->
+                                        <!-- <fieldset class="col-md-4 button-holder">
+                                            <input name="submit" type="submit" class="button default" id="submit" value="Submit"> -->
+                                        <!-- </fieldset> -->
+                                    <!-- </div> -->
+                                    <!-- <p class="subscribe-text">Please subscribe your email for latest updates!</p> -->
+                                <!-- </form> -->
+                            </div>
+                        </div>
+
+                        <div id="menu-2" class="content about-section">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="box-content profile">
+                                        <h3 class="widget-title">What Am I Up To?</h3>
+                                        <div class="profile-thumb">
+                                            <img src="images/kamari_aykes.jpg" alt="">
+                                        </div>
+                                        <div class="profile-content">
+                                            <h5 class="profile-name">Kamari Aykes</h5>
+                                            <span class="profile-role">Jr. Full-Stack Web Developer</span>
+                                            <p>I am currently continuing where my education at <a href='http://generalassemb.ly'>General Assembly</a> ended. This includes teaching myself Objective-C, Swift, and Android languages to deploy mobile applications. I am also contributing to open-source projects on Github and Stack Overflow. In addition, I will be participating in various local hackathons.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Background</h3>
+                                        <p><ul>Ruby/Rails · RSpec · Javascript/jQuery · AJAX · HTML5/CSS3 · Python · Version Control (Git) · PostgreSQL · ORM (Active Record) · Jasmine · Capybara · Sinatra · Redis · Firebase · Authorizations (OAuth, etc.) · OOP · TDD/BDD · RESTful APIs · Agile & Waterfall development</ul></p>
+                                        <div class="about-social">
+                                            <ul>
+                                                <li><a href="http://goo.gl/zni82q" class="fa fa-file-text"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Volunteerism</h3>
+                                        <div class="project-item">
+                                            <a href="http://www.nulyp.net"><img src="http://nul.iamempowered.com/sites/nul.iamempowered.com/files/field/article_images/Source%20-%20UL%20Logo_0.JPG" alt="Urban League Logo"></a>
+                                            <div class="project-hover">
+                                                <h4>National Urban League Young Professionals</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">My Technical Skills</h3>
+                                        <ul class="progess-bars">
+                                            <li>
+                                                <span>Ruby on Rails 85%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span>HTML5/CSS3 85%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span>BDD/TDD 70%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span>Postgresql/Redis 85%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="menu-3" class="content gallery-section">
+                            <div class="box-content">
+                                <h3 class="widget-title">Projects</h3>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <a href="http://heremenow.herokuapp.com"><img src="images/hmn.png" alt="Here Me Now Screenshot"></a>
+                                            <div class="project-hover">
+                                                <h4>HereMeNow</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/2.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Another Image Caption</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/3.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Great Nature Capture</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/4.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Another Image Caption</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/5.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Great Nature Capture</h4>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/6.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Another Image Caption</h4>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="project-pages">
+                                    <ul>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">...</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div id="menu-4" class="content contact-section">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Send Me A Message</h3>
+                                        <p><a href="mailto:Aykeskc@gmail.com">AykesKC@gmail.com</a></p>
+                                        <!-- <form class="contact-form">
+                                            <fieldset>
+                                                <input type="text" class="name" id="name" placeholder="Name">
+                                            </fieldset>
+                                            <fieldset>
+                                                <input type="email" class="email" id="email" placeholder="Email">
+                                            </fieldset>
+                                            <fieldset>
+                                                <input type="text" class="subject" id="subject" placeholder="Subject">
+                                            </fieldset>
+                                            <fieldset>
+                                                <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                            </fieldset>
+                                            <fieldset>
+                                                <input type="submit" class="button" id="button" value="Send Message">
+                                            </fieldset>
+                                        </form> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Stay In Touch</h3>
+                                        <p>Thank you for a taking a moment to view my page. <br><br>
+										Please contact me for employment or project opportuinities. </p>
+                                        <div class="about-social">
+                                            <ul>
+                                                <li><a href="mailto:AykesKC@gmail.com" class="fa fa-envelope"></a></li>
+                                                <li><a href="http://linkedin.com/in/kamariaykes" class="fa fa-linkedin"></a></li>
+                                                <li><a href="http://twitter.com/brainyandbrown" class="fa fa-twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 hidden-sm">
+
+                    <nav id="nav" class="main-navigation hidden-xs hidden-sm">
+                        <ul class="main-menu">
+                            <li>
+                                <a class="show-1 active homebutton" href="#"><i class="fa fa-home"></i>Home</a>
+                            </li>
+                            <li>
+                                <a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>About Me</a>
+                            </li>
+                            <li>
+                                <a class="show-3 projectbutton" href="#"><i class="fa fa-camera"></i>Projects</a>
+                            </li>
+                            <li>
+                                <a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SITE-FOOTER -->
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>
+                        	Copyright &copy; 2015 Kamari Aykes using Bootstrap.js
+
+                    <!-- · Design: <a href="http://www.templatemo.com" target="_parent"><span class="green">free templates</span></a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .site-footer -->
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<!-- templatemo 439 rectangle -->
+    </body>
+</html>
